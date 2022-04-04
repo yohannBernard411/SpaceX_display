@@ -15,7 +15,7 @@ public class CapsuleController {
 	@Autowired
 	private CapsuleService capsuleService;
 	
-	@CrossOrigin("http://localhost:4200")
+	@CrossOrigin(origins = {"http://localhost:4200", "https://spacexdisplayapp.herokuapp.com"})
 	@RequestMapping(path= "/api/capsules", method=RequestMethod.GET)
 	public Capsule[] getListeCapsules(){
 		
