@@ -1,44 +1,83 @@
-package com.formation.capsule.models;
+package com.formation.capsule.dao.emtity;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.formation.capsule.models.Thrusters;
 
-public class Dragon {
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class ArrayList<ReponseDragonAPIEntity> {
 	
+	@JsonProperty(value="id")
 	private String id;
+	@JsonProperty(value="name")
 	private String name;
+	@JsonProperty(value="type")
 	private String type;
+	@JsonProperty(value="active")
 	private Boolean active;
+	@JsonProperty(value="crew_capacity")
 	private Number crew_capacity;
+	@JsonProperty(value="sidewall_angle_deg")
 	private Number sidewall_angle_deg;
+	@JsonProperty(value="orbit_duration_yr")
 	private Number orbit_duration_yr;
+	@JsonProperty(value="dry_mass_kg")
 	private Number dry_mass_kg;
+	@JsonProperty(value="dry_mass_lb")
 	private Number dry_mass_lb;
+	@JsonProperty(value="first_flight")
 	private String first_flight;
+	@JsonProperty(value="heat_shield.material")
     private String heat_shields_material;
+	@JsonProperty(value="heat_shield.size_meters")
     private Number heat_shields_size_meters;
+	@JsonProperty(value="heat_shield.temp_degrees")
     private Number heat_shields_temp_degrees;
+	@JsonProperty(value="heat_shield.dev_partner")
     private String heat_shields_dev_partner;
+	@JsonProperty(value="thursters")
     private ArrayList<Thrusters> thursters;
+	@JsonProperty(value="launch_payload_mass.kg")
 	private Number launch_payload_mass_kg;
+	@JsonProperty(value="launch_payload_mass.lb")
 	private Number launch_payload_mass_lb;
+	@JsonProperty(value="launch_payload_vol.cubic_meters")
 	private Number launch_payload_vol_cubic_meters;
+	@JsonProperty(value="launch_payload_vol.cubic_feet")
 	private Number launch_payload_vol_cubic_feet;
+	@JsonProperty(value="return_payload_mass.kg")
 	private Number return_payload_mass_kg;
+	@JsonProperty(value="return_payload_mass.lb")
 	private Number return_payload_mass_lb;
+	@JsonProperty(value="return_payload_vol.cubic_meters")
 	private Number return_payload_vol_cubic_meters;
+	@JsonProperty(value="return_payload_vol.cubic_feet")
 	private Number return_payload_vol_cubic_feet;
+	@JsonProperty(value="presurized_capsule.payload_volume.cubic_meters")
 	private Number pressurized_capsule_payload_volume_cubic_meters;
+	@JsonProperty(value="presurized_capsule.payload_volume.cubic_feet")
 	private Number pressurized_capsule_payload_volume_cubic_feet;
+	@JsonProperty(value="trunk.trunk_volume.cubic_meters")
 	private Number trunk_trunk_volume_cubic_meters;
+	@JsonProperty(value="trunk.trunk_volume.cubic_feet")
 	private Number trunk_trunk_volume_cubic_feet;
+	@JsonProperty(value="trunk.cargo.solar_array")
 	private Number trunk_cargo_solar_array;
+	@JsonProperty(value="trunk.cargo.unpressurized_cargo")
 	private Boolean trunk_cargo_unpressurized_cargo;
+	@JsonProperty(value="height_w_trunk.meters")
 	private Number height_w_trunk_meters;
+	@JsonProperty(value="height_w_trunk.feet")
 	private Number height_w_trunk_feet;
+	@JsonProperty(value="diameter.meters")
 	private Number diameter_meters;
+	@JsonProperty(value="diameter.feet")
 	private Number diameter_feet;
+	@JsonProperty(value="flickr_images")
 	private ArrayList<String> flickr_images;
+	@JsonProperty(value="wikipedia")
 	private String wikipedia;
+	@JsonProperty(value="description")
 	private String description;
 	
 	public String getId() {
@@ -257,6 +296,7 @@ public class Dragon {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+	
 
-		
 }

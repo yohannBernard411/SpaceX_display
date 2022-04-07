@@ -1,9 +1,11 @@
 package com.formation.capsule.dao;
 
-import com.formation.capsule.models.Dragon;
+import java.util.ArrayList;
+
+import com.formation.capsule.dao.emtity.ReponseDragonAPIEntity;
 
 public interface DragonAPIDAO {
 	
-	public Dragon[] getListeDragons();
+	public ArrayList<ReponseDragonAPIEntity> getListeDragons();
 
 }

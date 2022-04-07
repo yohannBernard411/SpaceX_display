@@ -1,6 +1,6 @@
 package com.formation.capsule.models;
 
-public class thrusters {
+public class Thrusters {
 	
 	private String type;
 	private Number amount;
@@ -8,7 +8,8 @@ public class thrusters {
 	private String fuel_1;
 	private String fuel_2;
 	private Number isp;
-	private Object thrust;
+	private Number thrust_kN;
+	private Number thrust_lbf;
 	
 	public String getType() {
 		return type;
@@ -46,13 +47,17 @@ public class thrusters {
 	public void setIsp(Number isp) {
 		this.isp = isp;
 	}
-	public Object getThrust() {
-		return thrust;
+	public Number getThrust_kN() {
+		return thrust_kN;
 	}
-	public void setThrust(Object thrust) {
-		this.thrust = thrust;
+	public void setThrust_kN(Number thrust_kN) {
+		this.thrust_kN = thrust_kN;
 	}
-
-	
+	public Number getThrust_lbf() {
+		return thrust_lbf;
+	}
+	public void setThrust_lbf(Number thrust_lbf) {
+		this.thrust_lbf = thrust_lbf;
+	}
 
 }
