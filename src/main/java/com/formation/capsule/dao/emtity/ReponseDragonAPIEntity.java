@@ -1,11 +1,33 @@
 package com.formation.capsule.dao.emtity;
 
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.formation.capsule.models.Thrusters;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;// in play 2.3
+import com.formation.capsule.models.Dragon;
+
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class ArrayList<ReponseDragonAPIEntity> {
+public class ReponseDragonAPIEntity { //correspond a toute la reponse de space x soit un array avec deux objets dedans!!
+	
+	@JsonFormat()
+	private List<RecordEntity> records;
+	ObjectMapper mapper = new ObjectMapper();
+	List<Dragon> listDragons = mapper.readValue(ReponseDragonAPIEntity, Dragon[].class);
+
+	public List<RecordEntity> getRecords() {
+		return records;
+	}
+
+	public void setRecords(List<RecordEntity> records) {
+		this.records = records;
+	}
+	
+	
+	
+	/*
 	
 	@JsonProperty(value="id")
 	private String id;
@@ -296,6 +318,9 @@ public class ArrayList<ReponseDragonAPIEntity> {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+	
+	*/
 	
 	
 

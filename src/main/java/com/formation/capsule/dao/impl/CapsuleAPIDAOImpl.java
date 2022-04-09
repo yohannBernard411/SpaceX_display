@@ -16,7 +16,7 @@ public class CapsuleAPIDAOImpl implements CapsuleAPIDAO {
 	private RestTemplate restTemplate;
 	@Override
 	public Capsule[] getListeCapsules() {
-		return restTemplate.getForObject(URL_API_OPEN_DATA, Capsule[].class);
+		return restTemplate.getForEntity(URL_API_OPEN_DATA, Capsule[].class);
 	}
 
 }

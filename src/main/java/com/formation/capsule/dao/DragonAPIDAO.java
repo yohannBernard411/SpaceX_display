@@ -1,11 +1,9 @@
 package com.formation.capsule.dao;
 
-import java.util.ArrayList;
-
 import com.formation.capsule.dao.emtity.ReponseDragonAPIEntity;
 
 public interface DragonAPIDAO {
 	
-	public ArrayList<ReponseDragonAPIEntity> getListeDragons();
+	public ReponseDragonAPIEntity getListeDragons(); //ReponseDragonAPIEntity est la forme de la reponse de l api space x!!!
 
 }
