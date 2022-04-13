@@ -8,8 +8,7 @@ public class Thrusters {
 	private String fuel_1;
 	private String fuel_2;
 	private Number isp;
-	private Number thrust_kN;
-	private Number thrust_lbf;
+	private Thrust thrust;
 	
 	public String getType() {
 		return type;
@@ -47,17 +46,12 @@ public class Thrusters {
 	public void setIsp(Number isp) {
 		this.isp = isp;
 	}
-	public Number getThrust_kN() {
-		return thrust_kN;
+	public Thrust getThrust() {
+		return thrust;
 	}
-	public void setThrust_kN(Number thrust_kN) {
-		this.thrust_kN = thrust_kN;
+	public void setThrust(Thrust thrust) {
+		this.thrust = thrust;
 	}
-	public Number getThrust_lbf() {
-		return thrust_lbf;
-	}
-	public void setThrust_lbf(Number thrust_lbf) {
-		this.thrust_lbf = thrust_lbf;
-	}
+	
 
 }

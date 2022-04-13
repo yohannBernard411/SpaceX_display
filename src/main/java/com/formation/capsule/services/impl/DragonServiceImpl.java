@@ -1,16 +1,10 @@
 package com.formation.capsule.services.impl;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.formation.capsule.dao.DragonAPIDAO;
-import com.formation.capsule.dao.emtity.RecordEntity;
-import com.formation.capsule.dao.emtity.ReponseDragonAPIEntity;
 import com.formation.capsule.models.Dragon;
-import com.formation.capsule.models.Thrusters;
 import com.formation.capsule.services.DragonService;
 
 @Service
@@ -18,20 +12,18 @@ public class DragonServiceImpl implements DragonService {
 	
 	@Autowired
 	public DragonAPIDAO dragonAPIDAO;
-
-
-	@Override
-    public List<Dragon> getListeDragons(){
-		
-		ReponseDragonAPIEntity reponse = dragonAPIDAO.getListeDragons();
-		return transformEntityToModel(reponse);
-		
-	}
 	
-	private List<Dragon> transformEntityToModel(ReponseDragonAPIEntity reponse) {
-		List<Dragon> resultat = new ArrayList<Dragon>();
-        for(RecordEntity record : reponse.getRecords()) {
-        	
+	@Override
+	public Dragon[] getListeDragons() {
+		Dragon[] reponse = dragonAPIDAO.getListeDragons();
+		return reponse;
+	}
+
+}
+
+		
+		/*
+		
         	ArrayList<Thrusters> thrustersArrayList = new ArrayList<Thrusters>();
         	
         	for(Thrusters oneThruster : record.getThursters()) {
@@ -89,7 +81,10 @@ public class DragonServiceImpl implements DragonService {
         }
 		return resultat;
 	}
-
+	
+	*/
+		
+		
 		/*
 		
 		Thrusters thrustersTest = new Thrusters();
@@ -156,6 +151,3 @@ public class DragonServiceImpl implements DragonService {
 		return dragonArray;
 		
 		*/
-
-
-}

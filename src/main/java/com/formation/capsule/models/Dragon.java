@@ -14,29 +14,16 @@ public class Dragon {
 	private Number dry_mass_kg;
 	private Number dry_mass_lb;
 	private String first_flight;
-    private String heat_shields_material;
-    private Number heat_shields_size_meters;
-    private Number heat_shields_temp_degrees;
-    private String heat_shields_dev_partner;
-    private ArrayList<Thrusters> thursters;
-	private Number launch_payload_mass_kg;
-	private Number launch_payload_mass_lb;
-	private Number launch_payload_vol_cubic_meters;
-	private Number launch_payload_vol_cubic_feet;
-	private Number return_payload_mass_kg;
-	private Number return_payload_mass_lb;
-	private Number return_payload_vol_cubic_meters;
-	private Number return_payload_vol_cubic_feet;
-	private Number pressurized_capsule_payload_volume_cubic_meters;
-	private Number pressurized_capsule_payload_volume_cubic_feet;
-	private Number trunk_trunk_volume_cubic_meters;
-	private Number trunk_trunk_volume_cubic_feet;
-	private Number trunk_cargo_solar_array;
-	private Boolean trunk_cargo_unpressurized_cargo;
-	private Number height_w_trunk_meters;
-	private Number height_w_trunk_feet;
-	private Number diameter_meters;
-	private Number diameter_feet;
+	private HeatShield heat_shield;
+    private ArrayList<Thrusters> thrusters;
+    private LPM launch_payload_mass;
+    private LPV launch_payload_vol;
+    private RPM return_payload_mass;
+    private RPV return_payload_vol;
+	private PC pressurized_capsule;
+	private Trunk trunk;
+	private HWTrunk height_w_trunk;
+	private Diameter diameter;
 	private ArrayList<String> flickr_images;
 	private String wikipedia;
 	private String description;
@@ -101,143 +88,65 @@ public class Dragon {
 	public void setFirst_flight(String first_flight) {
 		this.first_flight = first_flight;
 	}
-	public String getHeat_shields_material() {
-		return heat_shields_material;
+	public HeatShield getHeat_shield() {
+		return heat_shield;
 	}
-	public void setHeat_shields_material(String heat_shields_material) {
-		this.heat_shields_material = heat_shields_material;
+	public void setHeat_shield(HeatShield heat_shield) {
+		this.heat_shield = heat_shield;
 	}
-	public Number getHeat_shields_size_meters() {
-		return heat_shields_size_meters;
+	public ArrayList<Thrusters> getThrusters() {
+		return thrusters;
 	}
-	public void setHeat_shields_size_meters(Number heat_shields_size_meters) {
-		this.heat_shields_size_meters = heat_shields_size_meters;
+	public void setThrusters(ArrayList<Thrusters> thrusters) {
+		this.thrusters = thrusters;
 	}
-	public Number getHeat_shields_temp_degrees() {
-		return heat_shields_temp_degrees;
+	public LPM getLaunch_payload_mass() {
+		return launch_payload_mass;
 	}
-	public void setHeat_shields_temp_degrees(Number heat_shields_temp_degrees) {
-		this.heat_shields_temp_degrees = heat_shields_temp_degrees;
+	public void setLaunch_payload_mass(LPM launch_payload_mass) {
+		this.launch_payload_mass = launch_payload_mass;
 	}
-	public String getHeat_shields_dev_partner() {
-		return heat_shields_dev_partner;
+	public LPV getLaunch_payload_vol() {
+		return launch_payload_vol;
 	}
-	public void setHeat_shields_dev_partner(String heat_shields_dev_partner) {
-		this.heat_shields_dev_partner = heat_shields_dev_partner;
+	public void setLaunch_payload_vol(LPV launch_payload_vol) {
+		this.launch_payload_vol = launch_payload_vol;
 	}
-	public ArrayList<Thrusters> getThursters() {
-		return thursters;
+	public RPM getReturn_payload_mass() {
+		return return_payload_mass;
 	}
-	public void setThursters(ArrayList<Thrusters> thursters) {
-		this.thursters = thursters;
+	public void setReturn_payload_mass(RPM return_payload_mass) {
+		this.return_payload_mass = return_payload_mass;
 	}
-	public Number getLaunch_payload_mass_kg() {
-		return launch_payload_mass_kg;
+	public RPV getReturn_payload_vol() {
+		return return_payload_vol;
 	}
-	public void setLaunch_payload_mass_kg(Number launch_payload_mass_kg) {
-		this.launch_payload_mass_kg = launch_payload_mass_kg;
+	public void setReturn_payload_vol(RPV return_payload_vol) {
+		this.return_payload_vol = return_payload_vol;
 	}
-	public Number getLaunch_payload_mass_lb() {
-		return launch_payload_mass_lb;
+	public PC getPressurized_capsule() {
+		return pressurized_capsule;
 	}
-	public void setLaunch_payload_mass_lb(Number launch_payload_mass_lb) {
-		this.launch_payload_mass_lb = launch_payload_mass_lb;
+	public void setPressurized_capsule(PC pressurized_capsule) {
+		this.pressurized_capsule = pressurized_capsule;
 	}
-	public Number getLaunch_payload_vol_cubic_meters() {
-		return launch_payload_vol_cubic_meters;
+	public Trunk getTrunk() {
+		return trunk;
 	}
-	public void setLaunch_payload_vol_cubic_meters(Number launch_payload_vol_cubic_meters) {
-		this.launch_payload_vol_cubic_meters = launch_payload_vol_cubic_meters;
+	public void setTrunk(Trunk trunk) {
+		this.trunk = trunk;
 	}
-	public Number getLaunch_payload_vol_cubic_feet() {
-		return launch_payload_vol_cubic_feet;
+	public HWTrunk getHeight_w_trunk() {
+		return height_w_trunk;
 	}
-	public void setLaunch_payload_vol_cubic_feet(Number launch_payload_vol_cubic_feet) {
-		this.launch_payload_vol_cubic_feet = launch_payload_vol_cubic_feet;
+	public void setHeight_w_trunk(HWTrunk height_w_trunk) {
+		this.height_w_trunk = height_w_trunk;
 	}
-	public Number getReturn_payload_mass_kg() {
-		return return_payload_mass_kg;
+	public Diameter getDiameter() {
+		return diameter;
 	}
-	public void setReturn_payload_mass_kg(Number return_payload_mass_kg) {
-		this.return_payload_mass_kg = return_payload_mass_kg;
-	}
-	public Number getReturn_payload_mass_lb() {
-		return return_payload_mass_lb;
-	}
-	public void setReturn_payload_mass_lb(Number return_payload_mass_lb) {
-		this.return_payload_mass_lb = return_payload_mass_lb;
-	}
-	public Number getReturn_payload_vol_cubic_meters() {
-		return return_payload_vol_cubic_meters;
-	}
-	public void setReturn_payload_vol_cubic_meters(Number return_payload_vol_cubic_meters) {
-		this.return_payload_vol_cubic_meters = return_payload_vol_cubic_meters;
-	}
-	public Number getReturn_payload_vol_cubic_feet() {
-		return return_payload_vol_cubic_feet;
-	}
-	public void setReturn_payload_vol_cubic_feet(Number return_payload_vol_cubic_feet) {
-		this.return_payload_vol_cubic_feet = return_payload_vol_cubic_feet;
-	}
-	public Number getPressurized_capsule_payload_volume_cubic_meters() {
-		return pressurized_capsule_payload_volume_cubic_meters;
-	}
-	public void setPressurized_capsule_payload_volume_cubic_meters(Number pressurized_capsule_payload_volume_cubic_meters) {
-		this.pressurized_capsule_payload_volume_cubic_meters = pressurized_capsule_payload_volume_cubic_meters;
-	}
-	public Number getPressurized_capsule_payload_volume_cubic_feet() {
-		return pressurized_capsule_payload_volume_cubic_feet;
-	}
-	public void setPressurized_capsule_payload_volume_cubic_feet(Number pressurized_capsule_payload_volume_cubic_feet) {
-		this.pressurized_capsule_payload_volume_cubic_feet = pressurized_capsule_payload_volume_cubic_feet;
-	}
-	public Number getTrunk_trunk_volume_cubic_meters() {
-		return trunk_trunk_volume_cubic_meters;
-	}
-	public void setTrunk_trunk_volume_cubic_meters(Number trunk_trunk_volume_cubic_meters) {
-		this.trunk_trunk_volume_cubic_meters = trunk_trunk_volume_cubic_meters;
-	}
-	public Number getTrunk_trunk_volume_cubic_feet() {
-		return trunk_trunk_volume_cubic_feet;
-	}
-	public void setTrunk_trunk_volume_cubic_feet(Number trunk_trunk_volume_cubic_feet) {
-		this.trunk_trunk_volume_cubic_feet = trunk_trunk_volume_cubic_feet;
-	}
-	public Number getTrunk_cargo_solar_array() {
-		return trunk_cargo_solar_array;
-	}
-	public void setTrunk_cargo_solar_array(Number trunk_cargo_solar_array) {
-		this.trunk_cargo_solar_array = trunk_cargo_solar_array;
-	}
-	public Boolean getTrunk_cargo_unpressurized_cargo() {
-		return trunk_cargo_unpressurized_cargo;
-	}
-	public void setTrunk_cargo_unpressurized_cargo(Boolean trunk_cargo_unpressurized_cargo) {
-		this.trunk_cargo_unpressurized_cargo = trunk_cargo_unpressurized_cargo;
-	}
-	public Number getHeight_w_trunk_meters() {
-		return height_w_trunk_meters;
-	}
-	public void setHeight_w_trunk_meters(Number height_w_trunk_meters) {
-		this.height_w_trunk_meters = height_w_trunk_meters;
-	}
-	public Number getHeight_w_trunk_feet() {
-		return height_w_trunk_feet;
-	}
-	public void setHeight_w_trunk_feet(Number height_w_trunk_feet) {
-		this.height_w_trunk_feet = height_w_trunk_feet;
-	}
-	public Number getDiameter_meters() {
-		return diameter_meters;
-	}
-	public void setDiameter_meters(Number diameter_meters) {
-		this.diameter_meters = diameter_meters;
-	}
-	public Number getDiameter_feet() {
-		return diameter_feet;
-	}
-	public void setDiameter_feet(Number diameter_feet) {
-		this.diameter_feet = diameter_feet;
+	public void setDiameter(Diameter diameter) {
+		this.diameter = diameter;
 	}
 	public ArrayList<String> getFlickr_images() {
 		return flickr_images;
@@ -257,6 +166,8 @@ public class Dragon {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	
+	
 
 		
 }

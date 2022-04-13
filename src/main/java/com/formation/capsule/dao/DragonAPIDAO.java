@@ -1,9 +1,14 @@
 package com.formation.capsule.dao;
 
-import com.formation.capsule.dao.emtity.ReponseDragonAPIEntity;
+import java.util.ArrayList;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.formation.capsule.models.Dragon;
+import com.formation.capsule.models.Thrusters;
 
 public interface DragonAPIDAO {
 	
-	public ReponseDragonAPIEntity getListeDragons(); //ReponseDragonAPIEntity est la forme de la reponse de l api space x!!!
+	public Dragon[] getListeDragons(); 
+
 
 }

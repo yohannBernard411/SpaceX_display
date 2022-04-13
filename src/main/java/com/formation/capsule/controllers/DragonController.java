@@ -1,15 +1,12 @@
 package com.formation.capsule.controllers;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.formation.capsule.models.Dragon;
-import com.formation.capsule.models.Thrusters;
 import com.formation.capsule.services.DragonService;
 
 @RestController
@@ -18,11 +15,18 @@ public class DragonController {
 	@Autowired
 	private DragonService dragonService;
 	
+	@CrossOrigin(origins = {"http://localhost:4200", "https://spacexdisplayapp.herokuapp.com"})
 	@RequestMapping(path= "/api/dragons", method=RequestMethod.GET)
-	public List<Dragon> getListeDragons() {
+	public Dragon[] getListeDragons(){
+		
+		return dragonService.getListeDragons();
+	}
+
+}
+		
+		
 		
 		/*
-		
 		Thrusters thrustersTest = new Thrusters();
 	    thrustersTest.setType("Draco");
 	    thrustersTest.setAmount(18);
@@ -87,9 +91,4 @@ public class DragonController {
 		return dragonArray;
 		
 		*/
-		
-		return dragonService.getListeDragons();
 
-	}
-	
-}
