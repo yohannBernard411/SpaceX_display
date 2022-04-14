@@ -8,11 +8,9 @@ import com.formation.capsule.models.Thrusters;
 
 @JsonIgnoreProperties(ignoreUnknown=true)
 public class ReponseDragonAPIEntity {
-	
-	
-	
+
 	@JsonProperty(value="id")
-	private String id;
+	private Number id;
 	@JsonProperty(value="name")
 	private String name;
 	@JsonProperty(value="type")
@@ -83,10 +81,11 @@ public class ReponseDragonAPIEntity {
 	private String wikipedia;
 	@JsonProperty(value="description")
 	private String description;
-	public String getId() {
+	
+	public Number getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Number id) {
 		this.id = id;
 	}
 	public String getName() {
