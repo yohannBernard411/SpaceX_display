@@ -1,6 +1,6 @@
 package com.formation.capsule.models;
 
-public class flickr_images {
+public class FlickrImages {
 	
 	private String img;
 
