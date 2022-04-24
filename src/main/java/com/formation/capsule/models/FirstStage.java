@@ -13,6 +13,5 @@ public class FirstStage {
 	public void setCores(ArrayList<CoreObject> cores) {
 		this.cores = cores;
 	}
-	
-	
+
 }

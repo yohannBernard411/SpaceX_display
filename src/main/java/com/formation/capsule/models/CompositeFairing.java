@@ -17,7 +17,5 @@ public class CompositeFairing {
 	public void setHeight(Height height) {
 		this.height = height;
 	}
-	
-	
 
 }

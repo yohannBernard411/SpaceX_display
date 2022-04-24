@@ -9,6 +9,7 @@ public class Timeline {
 	private Number second_stage_ignition;
 	private Number fairing_deploy;
 	private Number first_stage_landing;
+	
 	public Number getWebcast_liftoff() {
 		return webcast_liftoff;
 	}
@@ -51,7 +52,5 @@ public class Timeline {
 	public void setFirst_stage_landing(Number first_stage_landing) {
 		this.first_stage_landing = first_stage_landing;
 	}
-	
-	
 
 }

@@ -17,7 +17,5 @@ public class ThrustVacuum {
 	public void setLbf(Number lbf) {
 		this.lbf = lbf;
 	}
-	
-	
 
 }

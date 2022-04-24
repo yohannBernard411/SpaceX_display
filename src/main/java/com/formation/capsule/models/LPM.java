@@ -4,6 +4,7 @@ public class LPM {
 	
 	private Number kg;
 	private Number lb;
+	
 	public Number getKg() {
 		return kg;
 	}
@@ -16,7 +17,5 @@ public class LPM {
 	public void setLb(Number lb) {
 		this.lb = lb;
 	}
-	
-	
 
 }

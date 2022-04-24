@@ -6,6 +6,7 @@ public class SecondStage {
 	
 	private ArrayList<Payloads> payloads;
 	private Number block;
+	
 	public ArrayList<Payloads> getPayloads() {
 		return payloads;
 	}
@@ -18,8 +19,5 @@ public class SecondStage {
 	public void setBlock(Number block) {
 		this.block = block;
 	}
-	
-	
-	
 
 }

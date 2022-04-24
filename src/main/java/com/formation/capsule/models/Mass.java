@@ -17,7 +17,5 @@ public class Mass {
 	public void setLb(Number lb) {
 		this.lb = lb;
 	}
-	
-	
 
 }

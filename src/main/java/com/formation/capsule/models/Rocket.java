@@ -1,12 +1,14 @@
 package com.formation.capsule.models;
 
 public class Rocket {
+	
 	private String rocket_id;
 	private String rocket_name;
 	private String rocket_type;
 	private FirstStage first_stage;
 	private SecondStage second_stage;
 	private Fairings fairings;
+	
 	public String getRocket_id() {
 		return rocket_id;
 	}
@@ -43,6 +45,5 @@ public class Rocket {
 	public void setFairings(Fairings fairings) {
 		this.fairings = fairings;
 	}
-	
-	
+
 }

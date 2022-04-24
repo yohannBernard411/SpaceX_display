@@ -17,7 +17,5 @@ public class HWTrunk {
 	public void setFeet(Number feet) {
 		this.feet = feet;
 	}
-	
-	
 
 }

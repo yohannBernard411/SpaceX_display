@@ -31,7 +31,5 @@ public class Payload_weights {
 	public void setLb(Number lb) {
 		this.lb = lb;
 	}
-	
-	
 
 }

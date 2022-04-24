@@ -4,6 +4,7 @@ public class RPV {
 	
 	private Number cubic_meters;
 	private Number cubic_feet;
+	
 	public Number getCubic_meters() {
 		return cubic_meters;
 	}
@@ -16,7 +17,5 @@ public class RPV {
 	public void setCubic_feet(Number cubic_feet) {
 		this.cubic_feet = cubic_feet;
 	}
-	
-	
 
 }

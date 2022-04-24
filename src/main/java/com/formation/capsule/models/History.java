@@ -53,7 +53,4 @@ public class History {
 		this.links = links;
 	}
 	
-	
-	
-		
 }

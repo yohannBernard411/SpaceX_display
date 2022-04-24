@@ -73,7 +73,5 @@ public class CoreObject {
 	public void setLanding_vehicle(String landing_vehicle) {
 		this.landing_vehicle = landing_vehicle;
 	}
-	
-	
 
 }

@@ -24,7 +24,5 @@ public class HeadQuart {
 	public void setState(String state) {
 		this.state = state;
 	}
-	
-	
 
 }

@@ -166,8 +166,5 @@ public class Dragon {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	
-
 		
 }

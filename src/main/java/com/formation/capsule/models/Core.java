@@ -96,7 +96,5 @@ public class Core {
 	public void setDetails(String details) {
 		this.details = details;
 	}
-	
-	
 
 }

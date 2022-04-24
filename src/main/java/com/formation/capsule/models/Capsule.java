@@ -75,7 +75,5 @@ public class Capsule {
 	public void setReuse_count(Number reuse_count) {
 		this.reuse_count = reuse_count;
 	}
-	
-	
 
 }

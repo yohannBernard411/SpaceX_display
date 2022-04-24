@@ -6,6 +6,7 @@ public class HeatShield {
 	private Number size_meters;
 	private Number temp_degrees;
 	private String dev_partner;
+	
 	public String getMaterial() {
 		return material;
 	}
@@ -30,7 +31,5 @@ public class HeatShield {
 	public void setDev_partner(String dev_partner) {
 		this.dev_partner = dev_partner;
 	}
-	
-	
 
 }

@@ -83,7 +83,5 @@ public class LinksExt {
 	public void setYoutube_id(String youtube_id) {
 		this.youtube_id = youtube_id;
 	}
-	
-	
 
 }

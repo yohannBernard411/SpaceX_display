@@ -31,7 +31,5 @@ public class OtherLinks {
 	public void setElon_twitter(String elon_twitter) {
 		this.elon_twitter = elon_twitter;
 	}
-	
-	
 
 }

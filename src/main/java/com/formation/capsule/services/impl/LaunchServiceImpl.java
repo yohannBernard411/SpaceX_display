@@ -1,6 +1,5 @@
 package com.formation.capsule.services.impl;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +15,6 @@ public class LaunchServiceImpl implements LaunchService {
 
 	@Override
 	public Launch[] getListeLaunches() {
-
 		Launch[] reponse = launchAPIDAO.getListeLaunches();
 		return reponse;
 	}

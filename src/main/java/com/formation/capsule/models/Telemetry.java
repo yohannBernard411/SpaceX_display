@@ -11,7 +11,5 @@ public class Telemetry {
 	public void setFlight_club(String flight_club) {
 		this.flight_club = flight_club;
 	}
-	
-	
 
 }

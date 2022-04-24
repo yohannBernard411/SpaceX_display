@@ -1,8 +1,7 @@
 package com.formation.capsule.models;
 
 public class Engines {
-	
-	
+
 	private Number number;
 	private String type;
 	private String version;
@@ -81,9 +80,5 @@ public class Engines {
 	public void setThrust_to_weight(Number thrust_to_weight) {
 		this.thrust_to_weight = thrust_to_weight;
 	}
-	
-	
-	
-	
 
 }

@@ -12,7 +12,4 @@ public class FlickrImages {
 		this.img = img;
 	}
 
-	
-	
-
 }

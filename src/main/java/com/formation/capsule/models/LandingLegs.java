@@ -17,7 +17,5 @@ public class LandingLegs {
 	public void setMaterial(String material) {
 		this.material = material;
 	}
-	
-	
 
 }

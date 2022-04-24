@@ -7,7 +7,6 @@ import com.formation.capsule.dao.InfoAPIDAO;
 import com.formation.capsule.models.Info;
 import com.formation.capsule.services.InfoService;
 
-
 @Service
 public class InfoServiceImpl implements InfoService {
 	

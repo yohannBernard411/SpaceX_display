@@ -6,6 +6,7 @@ public class Fairings {
 	private Boolean recovery_attempt;
 	private Boolean recovered;
 	private String ship;
+	
 	public Boolean getReused() {
 		return reused;
 	}
@@ -30,9 +31,5 @@ public class Fairings {
 	public void setShip(String ship) {
 		this.ship = ship;
 	}
-	
-	
-	
-
 
 }

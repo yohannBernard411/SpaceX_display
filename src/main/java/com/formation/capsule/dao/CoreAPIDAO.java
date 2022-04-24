@@ -6,5 +6,4 @@ public interface CoreAPIDAO {
 	
 	public Core[] getListeCores(); 
 
-
 }

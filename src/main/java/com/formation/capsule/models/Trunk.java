@@ -18,8 +18,4 @@ public class Trunk {
 		this.cargo = cargo;
 	}
 
-    
-
-	
-
 }

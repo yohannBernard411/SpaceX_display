@@ -66,6 +66,5 @@ public class Landpad {
 	public void setDetails(String details) {
 		this.details = details;
 	}
-	
-	
+
 }

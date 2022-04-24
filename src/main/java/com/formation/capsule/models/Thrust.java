@@ -17,7 +17,5 @@ public class Thrust {
 	public void setLbf(Number lbf) {
 		this.lbf = lbf;
 	}
-	
-	
 
 }

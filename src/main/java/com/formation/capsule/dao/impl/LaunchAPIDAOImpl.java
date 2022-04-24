@@ -19,5 +19,4 @@ public class LaunchAPIDAOImpl implements LaunchAPIDAO {
 		return restTemplate.getForEntity(URL_API_OPEN_DATA, Launch[].class).getBody();
 	}
 
-
 }

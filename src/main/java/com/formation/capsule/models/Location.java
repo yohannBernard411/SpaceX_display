@@ -31,7 +31,5 @@ public class Location {
 	public void setLongitude(Number longitude) {
 		this.longitude = longitude;
 	}
-	
-	
 
 }

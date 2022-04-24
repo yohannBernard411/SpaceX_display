@@ -27,6 +27,7 @@ public class Launch {
     private Number static_fire_date_unix;
     private Timeline timeline;
     private ArrayList<String> crew;
+    
 	public Number getFlight_number() {
 		return flight_number;
 	}
@@ -165,8 +166,5 @@ public class Launch {
 	public void setCrew(ArrayList<String> crew) {
 		this.crew = crew;
 	}
-	
 
-    
-    
 }

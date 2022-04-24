@@ -16,7 +16,5 @@ public class Cargo {
 		public void setUnpressurized_cargo(Boolean unpressurized_cargo) {
 			this.unpressurized_cargo = unpressurized_cargo;
 		}
-		
-		
 
 }

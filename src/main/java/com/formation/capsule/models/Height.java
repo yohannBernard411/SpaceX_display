@@ -17,7 +17,5 @@ public class Height {
 	public void setFeet(Number feet) {
 		this.feet = feet;
 	}
-	
-	
 
 }

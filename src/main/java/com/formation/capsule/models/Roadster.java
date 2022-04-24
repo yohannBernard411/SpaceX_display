@@ -1,8 +1,7 @@
 package com.formation.capsule.models;
 
 public class Roadster {
-	
-	
+
 	private String name;
 	private String launch_date_utc;
 	private Number launch_date_unix;
@@ -186,7 +185,5 @@ public class Roadster {
 	public void setDetails(String details) {
 		this.details = details;
 	}
-	
-	
 
 }

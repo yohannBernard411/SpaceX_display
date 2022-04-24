@@ -15,6 +15,7 @@ public class LaunchPad {
 	private String details;
 	private String site_id;
 	private String site_name_long;
+	
 	public Location getLocation() {
 		return location;
 	}
@@ -81,7 +82,5 @@ public class LaunchPad {
 	public void setSite_name_long(String site_name_long) {
 		this.site_name_long = site_name_long;
 	}
-	
-	
 
 }

@@ -1,6 +1,5 @@
 package com.formation.capsule.models;
 
-
 public class Info {
 	
 	private String name;
@@ -109,7 +108,5 @@ public class Info {
 	public void setSummary(String summary) {
 		this.summary = summary;
 	}
-    
-    
 	
 }

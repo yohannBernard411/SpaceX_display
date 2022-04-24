@@ -45,9 +45,5 @@ public class FirstStage2 {
 	public void setThrust_vacuum(ThrustVacuum thrust_vacuum) {
 		this.thrust_vacuum = thrust_vacuum;
 	}
-	
-	
-	
-	
 
 }

@@ -18,6 +18,7 @@ public class LaunchPadController {
 		@CrossOrigin(origins = {"http://localhost:4200", "https://spacexdisplayapp.herokuapp.com"})
 		@RequestMapping(path = "/api/launchpads", method = RequestMethod.GET)
 		public LaunchPad[] getListeLanchPads(){
+			
 			return launchPadService.getListeLaunchPads();
 		}
 

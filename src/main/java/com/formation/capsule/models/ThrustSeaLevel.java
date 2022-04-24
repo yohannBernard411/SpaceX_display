@@ -17,7 +17,5 @@ public class ThrustSeaLevel {
 	public void setLbf(Number lbf) {
 		this.lbf = lbf;
 	}
-	
-	
 
 }

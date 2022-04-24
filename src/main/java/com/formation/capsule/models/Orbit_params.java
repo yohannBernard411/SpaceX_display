@@ -17,6 +17,7 @@ public class Orbit_params {
 	private String raan;
 	private String arg_of_pericenter;
 	private String mean_anomaly;
+	
 	public String getReference_system() {
 		return reference_system;
 	}
@@ -107,7 +108,5 @@ public class Orbit_params {
 	public void setMean_anomaly(String mean_anomaly) {
 		this.mean_anomaly = mean_anomaly;
 	}
-	
-	
 
 }

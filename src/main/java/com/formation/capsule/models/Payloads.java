@@ -13,6 +13,7 @@ public class Payloads {
 	private String manufacturer;
 	private String payload_type;
 	private String orbit;
+	
 	public Orbit_params getOrbit_params() {
 		return orbit_params;
 	}
@@ -68,6 +69,4 @@ public class Payloads {
 		this.orbit = orbit;
 	}
 
-	
-	
 }

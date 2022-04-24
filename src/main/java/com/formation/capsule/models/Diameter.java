@@ -17,7 +17,5 @@ public class Diameter {
 	public void setFeet(Number feet) {
 		this.feet = feet;
 	}
-	
-	
 
 }

@@ -1,9 +1,7 @@
 package com.formation.capsule.models;
 
 public class Payload {
-	
-	
-	
+
 	private String payload_id;
 	private Number[] norad_id;
 	private Boolean reused;
@@ -82,7 +80,5 @@ public class Payload {
 	public void setOrbit_params(OrbitParams orbit_params) {
 		this.orbit_params = orbit_params;
 	}
-	
-	
-	
+
 }

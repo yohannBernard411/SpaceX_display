@@ -17,7 +17,5 @@ public class Payloads2 {
 	public void setOption_1(String option_1) {
 		this.option_1 = option_1;
 	}
-	
-	
 
 }

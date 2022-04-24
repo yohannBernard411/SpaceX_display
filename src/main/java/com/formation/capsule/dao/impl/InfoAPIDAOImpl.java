@@ -7,7 +7,6 @@ import org.springframework.web.client.RestTemplate;
 import com.formation.capsule.dao.InfoAPIDAO;
 import com.formation.capsule.models.Info;
 
-
 @Repository
 public class InfoAPIDAOImpl implements InfoAPIDAO{
 	
@@ -17,8 +16,7 @@ public class InfoAPIDAOImpl implements InfoAPIDAO{
 	private RestTemplate restTemplate;
 	@Override
 	public Info getInfos() {
-		return restTemplate.getForObject(URL_API_OPEN_DATA, Info.class);
+		return restTemplate.getForEntity(URL_API_OPEN_DATA, Info.class).getBody();
 	}
-
 
 }

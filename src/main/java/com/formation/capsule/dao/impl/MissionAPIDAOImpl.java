@@ -14,7 +14,6 @@ public class MissionAPIDAOImpl implements MissionAPIDAO {
 
 	@Autowired
 	private RestTemplate restTemplate;
-	
 	@Override
 	public Mission2[] getListeMissions() {
 		return restTemplate.getForEntity(URL_API_OPEN_DATA, Mission2[].class).getBody();

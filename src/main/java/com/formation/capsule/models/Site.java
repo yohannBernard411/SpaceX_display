@@ -5,6 +5,7 @@ public class Site {
 	private String site_id;
 	private String site_name;
 	private String site_name_long;
+	
 	public String getSite_id() {
 		return site_id;
 	}
@@ -23,7 +24,5 @@ public class Site {
 	public void setSite_name_long(String site_name_long) {
 		this.site_name_long = site_name_long;
 	}
-	
-	
 
 }

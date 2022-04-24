@@ -4,6 +4,7 @@ public class LaunchSite {
 	
 	private Site site;
 	private Boolean launch_success;
+	
 	public Site getSite() {
 		return site;
 	}
@@ -16,7 +17,5 @@ public class LaunchSite {
 	public void setLaunch_success(Boolean launch_success) {
 		this.launch_success = launch_success;
 	}
-	
-	
 
 }

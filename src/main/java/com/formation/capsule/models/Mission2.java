@@ -59,7 +59,5 @@ public class Mission2 {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	
-	
 
 }

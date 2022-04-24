@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.formation.capsule.models.Capsule;
 import com.formation.capsule.models.Payload;
-import com.formation.capsule.services.CapsuleService;
 import com.formation.capsule.services.PayloadService;
 
 @RestController

@@ -45,7 +45,5 @@ public class SecondStage2 {
 	public void setPayloads(Payloads2 payloads) {
 		this.payloads = payloads;
 	}
-	
-	
 
 }

@@ -52,6 +52,5 @@ public class Thrusters {
 	public void setThrust(Thrust thrust) {
 		this.thrust = thrust;
 	}
-	
 
 }

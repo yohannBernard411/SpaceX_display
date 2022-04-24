@@ -17,7 +17,5 @@ public class Isp {
 	public void setVacuum(Number vacuum) {
 		this.vacuum = vacuum;
 	}
-	
-	
 
 }
