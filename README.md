@@ -1,7 +1,5 @@
 # SpaceX display
 
-[![standard-readme compliant](https://img.shields.io/bundlephobia/:format/:packageName)](https://img.shields.io/github/repo-size/yohannBernard411/spacex-display-app)
-
 Why this site?
 
   I wanted to learn Angular and Java, so I took a course on Udemy, but just viewing and reproducing isn't enough to learn so I needed a project, an API-based project that would deliver JSON-like information, and the API that I liked the most is SpaceX. In terms of operation: at each request, my Angular application asks my JAVA API which itself asks the space X API to provide the corresponding information. Of course it would be more efficient to ask the SpaceX API directly and to switch off Back-end! But the goal here for me is to learn. Then the collected information is displayed on the screen with the components of Angular Material. You can see the different equipment such as Capsules, Cores, Dragons, History, Info, Landing Pads, Launches, Launch Pads, Missions, Payloads, Rockets, Roadster, Ships.
