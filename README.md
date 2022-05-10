@@ -1,6 +1,6 @@
 # SpaceX display
 
-![alt text](https://zupimages.net/up/22/19/uc6g.png "Screen")
+![alt text](https://zupimages.net/up/22/19/uc6g.png "App screen")
 
 Why this site?
 
