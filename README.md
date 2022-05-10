@@ -1,5 +1,7 @@
 # SpaceX display
 
+![alt text](https://zupimages.net/up/22/19/uc6g.png "Screen")
+
 Why this site?
 
   I wanted to learn Angular and Java, so I took a course on Udemy, but just viewing and reproducing isn't enough to learn so I needed a project, an API-based project that would deliver JSON-like information, and the API that I liked the most is SpaceX. In terms of operation: at each request, my Angular application asks my JAVA API which itself asks the space X API to provide the corresponding information. Of course it would be more efficient to ask the SpaceX API directly and to switch off Back-end! But the goal here for me is to learn. Then the collected information is displayed on the screen with the components of Angular Material. You can see the different equipment such as Capsules, Cores, Dragons, History, Info, Landing Pads, Launches, Launch Pads, Missions, Payloads, Rockets, Roadster, Ships.
@@ -22,6 +24,7 @@ This Back-end cotains:
 - [Components](#components)
 - [Responsive](#responsive)
 - [Source](#source)
+- [Application](#application)
 
 ## Components
 
@@ -34,4 +37,8 @@ The responsive is simply managed by the size of the cards and by the display fle
 
 ## Source
 
-I created this site as an application exercise after having followed [Pierre Cailleaud's udemy course](https://www.udemy.com/course/votre-premiere-app-web-angular-springboot/), the application of which on car parks is visible [here](https://github.com/yohannBernard411/RochefortParkingApp). This site is therefore far from perfect. But it allowed me to discover **Java**, **Spring Boot**, annotations, **Angular**, components, and other...
+I created this site as an application exercise after having followed [Pierre Cailleaud's udemy course](https://www.udemy.com/course/votre-premiere-app-web-angular-springboot/), the application of which on car parks is visible [here](https://park-rochefort-app.herokuapp.com/parkings) and the code is [here](https://github.com/yohannBernard411/RochefortParkingApp). This site is therefore far from perfect. But it allowed me to discover **Java**, **Spring Boot**, annotations, **Angular**, components, and other...
+
+## Application
+
+You can test my Space X display application [here](https://spacexdisplayapp.herokuapp.com).
